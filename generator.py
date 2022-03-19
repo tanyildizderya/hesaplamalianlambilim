@@ -107,16 +107,7 @@ Türkçe Cümle Yapısı
 
 """
 
-
-sentence_generator = random.choice(subject_list) + " " \
-                     + random.choice(adjective_list) + " " \
-                     + random.choice(object_list) + " " \
-                     + random.choice(indirect_object_list) + " " \
-                     + random.choice(verb_list)
-
-print(sentence_generator)
-
-"""def sentenceGenerate():
+def sentenceGenerate():
     sentence_generator = random.choice(subject_list) + " " \
                          + random.choice(adjective_list) + " " \
                          + random.choice(object_list) + " " \
@@ -124,4 +115,5 @@ print(sentence_generator)
                          + random.choice(verb_list)
     return sentence_generator
 
-print(sentenceGenerate())"""
+
+print(sentenceGenerate())

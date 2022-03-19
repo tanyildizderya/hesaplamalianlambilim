@@ -2,9 +2,10 @@ import random
 
 from flask import Flask, render_template, request
 import json
-from generator import *
+from generator import sentenceGenerate
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def index():
@@ -13,9 +14,7 @@ def index():
 
 @app.route("/", methods=['POST'])
 def getSentence():
-    if request.method == 'POST':
-        if request.form.get('generator'):
-            return render_template('index.html', sentence_generator=sentence_generator)
+    return render_template('index.html', sentence_generator=sentenceGenerate())
 
 
 if __name__ == '__main__':
